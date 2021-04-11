@@ -1,38 +1,164 @@
-.App {
-  text-align: center;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.counter {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 34, 255, 0.05);
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.settings {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 34, 255, 0.05);
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.setting {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.setting_input {
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid black;
+    text-align: center;
+    color: teal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input_err {
+    width: 100px;
+    height: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid red;
+    text-align: center;
+    background-color: rgba(255,4,0,0.2);
+    color: teal;
+}
+
+.setting_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.scoreboard {
+    color: teal;
+    font-size: 40px;
+}
+
+.red {
+    color: red;
+    font-size: 50px;
+}
+
+.screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.input_board {
+    width: 280px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+
+}
+
+.setting_info {
+    width: 290px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    color: #00af03
+}
+
+.info_err {
+    width: 290px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    color: red;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.set {
+    width: 70px;
+    background-color: rgba(0,13,255,0.13);
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+
+}
+
+.accept {
+    width: auto;
+    background-color: rgba(0,13,255,0.13);
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+
+}
+
+.ink {
+    width: 70px;
+    background-color: rgba(8, 255, 32, 0.39);
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+
+}
+
+.reset {
+    width: 70px;
+    background-color: rgba(255, 120, 32, 0.39);
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+
 }
